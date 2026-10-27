@@ -1,0 +1,33 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>530</x><y>310</y><w>300</w><h>130</h></coordinates><panel_attributes>Premio
+--
+nombre: string
+ubicacion: string
+valor: double
+--
++mostrarInformacion(string, string, double): string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>110</y><w>210</w><h>70</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+elementoSorteable
+--
++mostrarInformacion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>310</y><w>270</w><h>130</h></coordinates><panel_attributes>Entrada
+--
+nombreEvento: string
+ubicacion; string
+numeroEntrada: int
+--
+mostrarInformacion(string, string, int): string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>170</y><w>240</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90;220;90;220;140</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>170</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>310</y><w>270</w><h>130</h></coordinates><panel_attributes>Participante
+--
+nombre: string
+apellido: string
+edad: int
+--
++ mostrarInformacion(string, string, int): string</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>170</y><w>290</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>270;10;270;70;10;70;10;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1060</x><y>560</y><w>210</w><h>150</h></coordinates><panel_attributes>&lt;&lt;generic&gt;&gt; urna&lt;t 
+extends elementoSorteable&gt;
+--
+-elementos: list&lt;t&gt;
+--
++agregar(elemento: t): void
++extraer: t
++cantidad(): int
++estaVacia(): bool
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>940</x><y>430</y><w>140</w><h>260</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>120;240;10;240;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>430</y><w>400</w><h>260</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>380;240;10;240;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>430</y><w>720</w><h>260</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>700;240;10;240;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>810</y><w>210</w><h>70</h></coordinates><panel_attributes>main
+--
++main(args: string[]): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>850</x><y>650</y><w>100</w><h>70</h></coordinates><panel_attributes>contiene</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>680</y><w>340</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>320;10;10;10;10;120</additional_attributes></element></diagram>
